@@ -1,0 +1,84 @@
+.bootstrap-navbar {
+  padding: 0px 20px !important;
+  background-color: #fff;
+}
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.navbar-links {
+  position: absolute;
+  top: 16px !important;
+  right: 0px;
+}
+.fixed-div {
+  min-width: 180px !important;
+  height: 0px !important;
+}
+.navbar-collapse input[type='text'] {
+  line-height: 28px;
+  font-size: 15px;
+  min-width: 15%;
+  width: 47%;
+  margin-right: 10px;
+  display: flex;
+}
+.navbar-collapse .form-group {
+  width: calc(100% - 110px);
+}
+.navbar-collapse form {
+  width: 100%;
+}
+.navbar-collapse button {
+  width: 100px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.user-info-list {
+  font-weight: bold !important;
+  border: none !important;
+}
+.user-info-list:hover {
+  cursor: pointer;
+}
+.user-info-list:nth-child(2):hover {
+  background-color: #007bff;
+}
+@media (max-width: 433px) {
+  .logo {
+    width: 100px !important;
+    height: 60px !important;
+  }
+  .navbar-links:nth-child(2) {
+    color: red !important;
+  }
+  .navbar-links {
+    top: 20px !important;
+  }
+  .navbar-links > form > div > a:first-child {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse input[type='text'] {
+    padding: 25px 5px;
+    line-height: 28px;
+    font-size: 15px;
+    width: 100%;
+    margin-right: 2px;
+  }
+  .navbar-collapse button {
+    font-size: 15px;
+    padding: 5px 5px;
+    width: 100%;
+  }
+  .navbar-collapse .form-group {
+    width: 100% !important;
+    margin-bottom: 0;
+  }
+  .navbar-links{
+    right: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.jobs-container {
+  margin-top: 20px;
+  font: normal 16px/24px Inter, Helvetica, Arial, sans-serif;
+}
+.jobs-info > form {
+  width: fit-content;
+  background-color: #fff;
+  padding: 2px 5px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+.jobs-info > form > label {
+  margin: 0px 5px;
+}
+.filters .list-group-item {
+  /* background-color: #dee2e6 !important; */
+  background-color: #dee2e6 !important;
+  border: none;
+  text-align: left;
+}
+.filters .list-group-item:first-child {
+  font-size: 25px;
+  font-weight: bold;
+}
+.filters .list-group input[type='radio'] {
+  display: none;
+}
+.filters .list-group input[type='radio']:checked ~ label {
+  color: blue;
+}
+.filters .list-group input[type='radio']:hover ~ label {
+  cursor: pointer;
+}
+/* .filters .list-group input[type='checkbox'] {
+  cursor: pointer;
+} */
+.filters .list-group input[type='checkbox']:hover {
+  cursor: pointer;
+}
+.filters .list-group input[type='checkbox']:hover ~ label {
+  cursor: pointer;
+}

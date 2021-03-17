@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+import './App.css'
+import Home from './components/home/Home'
+import Jobs from './components/jobs/Jobs'
+import SignIn from './components/signIn/SignIn'
+import Register from './components/register/Register'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Container className="content-container" fluid>
+      <Switch>
+        <Route
+          exact
+          path="/register"
+          render={props => <Register {...props} />}
+        />
+        <Route exact path="/login" render={props => <SignIn {...props} />} />
+        <Route exact path="/jobs" render={props => <Jobs {...props} />} />
 
-export default App;
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Container>
+  )
+}
+export default App

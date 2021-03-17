@@ -1,0 +1,60 @@
+.home-search-job {
+  padding: 170px 56px 205px;
+}
+.home-search-job input[type='text'] {
+  padding: 30px 10px;
+  line-height: 28px;
+  font-size: 25px;
+  width: 43%;
+  border-radius: 0%;
+}
+.home-search-job button {
+  font-size: 20px;
+  padding: 14px 35px;
+  border-radius: 0%;
+}
+.home-search-job h1 {
+  font-size: 50px;
+  padding-bottom: 14px;
+  border-radius: 0%;
+}
+.home-search-job p {
+  margin-top: 8px;
+  font: normal 16px/24px Inter, Helvetica, Arial, sans-serif;
+  color: #393f47;
+}
+.city-card {
+  margin-bottom: 10px;
+}
+.city-card > img {
+  height: 300px;
+}
+@media (max-width: 900px) {
+  .home-search-job .form-inline {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 40px;
+    display: block !important;
+  }
+  .home-search-job input[type='text'],
+  button {
+    width: 100%;
+  }
+}
+.portfolio > h2 {
+  color: #0b0d0e;
+  margin-bottom: 8px;
+  font: 700 28px/40px Inter, Helvetica, Arial, sans-serif;
+}
+.portfolio > p {
+  font: normal 18px/28px Inter, Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) and (max-width: 1550px) {
+  .card-column {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
