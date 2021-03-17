@@ -50,7 +50,7 @@ function Home() {
       <Navbar home={true} />
       <div className="home-search-job container">
         <h1>Your new job, vacancies all over the USA</h1>
-        <p>
+        <p className="mt-3">
           More than 583800 current vacancies from 21470 sites available to you.
           Find your new job today.
         </p>
@@ -78,8 +78,8 @@ function Home() {
       </div>
       <hr />
       <div className="portfolio container-fluid">
-        <h2>Job search by city, job in USA</h2>
-        <p>
+        <h2 className="mb-3">Job search by city, job in USA</h2>
+        <p className="mb-5">
           More than 60 regions USA available for search. Find a job that matches
           your request.
         </p>

@@ -103,7 +103,7 @@ function Jobs() {
           <div className="col-lg-9">
             <div className="jobs-info container">
               <h1>Jobs</h1>
-              <h5>Found 106 jobs</h5>
+              <h5>Found {jobs.length} jobs</h5>
               <form className="form-inline">
                 <label className="form-label">Get new jobs by email </label>
                 <div className="custom-control custom-switch">

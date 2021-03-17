@@ -19,12 +19,8 @@
   border-radius: 0%;
 }
 .home-search-job p {
-  margin-top: 8px;
   font: normal 16px/24px Inter, Helvetica, Arial, sans-serif;
   color: #393f47;
-}
-.city-card {
-  margin-bottom: 10px;
 }
 .city-card > img {
   height: 300px;
@@ -45,12 +41,10 @@
 }
 .portfolio > h2 {
   color: #0b0d0e;
-  margin-bottom: 8px;
   font: 700 28px/40px Inter, Helvetica, Arial, sans-serif;
 }
 .portfolio > p {
   font: normal 18px/28px Inter, Helvetica, Arial, sans-serif;
-  margin-bottom: 40px;
 }
 @media (min-width: 1200px) and (max-width: 1550px) {
   .card-column {

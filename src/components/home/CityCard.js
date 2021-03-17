@@ -3,7 +3,7 @@ import React from 'react'
 function CityCard({ city }) {
   const { imgLink, cityName, numOfVacancies } = city
   return (
-    <div className="bg-dark text-white city-card card">
+    <div className="bg-dark text-white city-card card mb-3">
       <img className="card-img" src={imgLink} alt="Card poster" />
       <div className="card-img-overlay">
         <div
