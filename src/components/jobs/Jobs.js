@@ -6,7 +6,6 @@ import useJobs from './useJobs'
 import JobsPagination from './JobsPagination'
 import { BeatLoader } from 'react-spinners'
 import filters from '../../utils/filters'
-import SalaryModal from '../modals/SalaryModal'
 
 function Jobs() {
   const {
@@ -15,8 +14,6 @@ function Jobs() {
     reduxFilters,
     onFiltersChangeChange,
     onJobTypeFilterChange,
-    salaryModalOpen,
-    toggleSalaryModal,
   } = useJobs()
 
   const { salary, fullOrPartTime, date } = reduxFilters

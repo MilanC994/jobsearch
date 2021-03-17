@@ -1,6 +1,5 @@
 import { useCallback, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import useModal from '../../hooks/useModal'
 
 import {
   fetchJobs,
@@ -14,7 +13,6 @@ const PARTTIME = 'parttime'
 const BOTH = 'both'
 
 function useJobs() {
-  const { open: salaryModalOpen, toggleModal: toggleSalaryModal } = useModal()
   const dispatch = useDispatch()
   const jobs = useSelector(state => state.jobs.jobs)
   const filteredJobs = useSelector(state => state.jobs.filteredJobs)
@@ -90,7 +88,7 @@ function useJobs() {
     e => {
       if (e.target.name === 'salary') {
         if (e.target.id === 'other') {
-          toggleSalaryModal()
+          // toggleSalaryModal()
         } else {
           const chosenFilter = filters.salary.find(s => s.id === e.target.id)
 
@@ -104,7 +102,7 @@ function useJobs() {
         dispatch(setFilters({ [e.target.name]: e.target.value }))
       }
     },
-    [dispatch, toggleSalaryModal]
+    [dispatch]
   )
 
   useEffect(() => {
@@ -133,8 +131,6 @@ function useJobs() {
     loading,
     onFiltersChangeChange,
     onJobTypeFilterChange,
-    salaryModalOpen,
-    toggleSalaryModal,
   }
 }
 
