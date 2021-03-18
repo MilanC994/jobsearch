@@ -22,7 +22,7 @@ function JobCard({ title, description, location, created_at, salary }) {
         <ReactMarkdown
           source={
             description.length > 400
-              ? description.slice(0, 399) + '...'
+              ? description.slice(0, 398) + '...'
               : description
           }
         />
