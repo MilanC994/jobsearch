@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test Renders correctly 1`] = `
+<StaticRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    staticContext={Object {}}
+  >
+    <Home>
+      <div
+        className="container-fluid"
+      >
+        <Navbar
+          home={true}
+        >
+          <nav
+            className="bootstrap-navbar navbar navbar-expand-lg navbar-light"
+          >
+            <span
+              className="navbar-brand"
+            >
+              <Link
+                id="app-logo-link"
+                to="/"
+              >
+                <LinkAnchor
+                  href="/"
+                  id="app-logo-link"
+                  navigate={[Function]}
+                >
+                  <a
+                    href="/"
+                    id="app-logo-link"
+                    onClick={[Function]}
+                  >
+                    <img
+                      alt="logo "
+                      className="align-top logo"
+                      height="60"
+                      src="jooble_logo.png"
+                      width="150"
+                    />
+                  </a>
+                </LinkAnchor>
+              </Link>
+            </span>
+            <div
+              className="fixed-div"
+            />
+            <div
+              className="align-top navbar-links justify-content-end navbar-nav"
+            >
+              <form
+                className="form-inline"
+                id="login-register-form"
+              >
+                <div
+                  className="mr-2 btn-group"
+                  role="group"
+                >
+                  <Link
+                    id="register-link"
+                    to="/register"
+                  >
+                    <LinkAnchor
+                      href="/register"
+                      id="register-link"
+                      navigate={[Function]}
+                    >
+                      <a
+                        href="/register"
+                        id="register-link"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="mx-2 btn btn-outline-primary btn-md"
+                          id="register"
+                        >
+                          Register
+                        </button>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                  <Link
+                    id="login-link"
+                    to="/login"
+                  >
+                    <LinkAnchor
+                      href="/login"
+                      id="login-link"
+                      navigate={[Function]}
+                    >
+                      <a
+                        href="/login"
+                        id="login-link"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="mx-2 btn btn-outline-secondary btn-md"
+                          type="button"
+                        >
+                          Login
+                        </button>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </Navbar>
+        <div
+          className="home-search-job container"
+        >
+          <h1>
+            Your new job, vacancies all over the USA
+          </h1>
+          <p
+            className="mt-3"
+          >
+            More than 583800 current vacancies from 21470 sites available to you. Find your new job today.
+          </p>
+          <form
+            className="form-inline"
+          >
+            <input
+              className="form-control"
+              error={null}
+              name="keywords"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="What position are you looking for"
+              type="text"
+              value=""
+            />
+            <input
+              className="form-control"
+              error={null}
+              name="location"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Location"
+              type="text"
+              value=""
+            />
+            <button
+              className="btn btn-primary"
+              id="find-jobs-button"
+              onClick={[Function]}
+              type="button"
+            >
+              Find Jobs
+            </button>
+          </form>
+        </div>
+        <hr />
+        <div
+          className="portfolio container-fluid"
+        >
+          <h2
+            className="mb-3"
+          >
+            Job search by city, job in USA
+          </h2>
+          <p
+            className="mb-5"
+          >
+            More than 60 regions USA available for search. Find a job that matches your request.
+          </p>
+          <div
+            className="row"
+          >
+            <div
+              className="card-column col-xl-3 col-lg-6 col-md-12"
+              key="https://jooble.org/images/cities/us/33025.jpg"
+            >
+              <CityCard
+                city={
+                  Object {
+                    "cityName": "New York, NY",
+                    "imgLink": "https://jooble.org/images/cities/us/33025.jpg",
+                    "numOfVacancies": 65.535,
+                  }
+                }
+              >
+                <div
+                  className="bg-dark text-white city-card card mb-3"
+                >
+                  <img
+                    alt="Card poster"
+                    className="card-img"
+                    src="https://jooble.org/images/cities/us/33025.jpg"
+                  />
+                  <div
+                    className="card-img-overlay"
+                  >
+                    <div
+                      className="container-fluid"
+                      style={
+                        Object {
+                          "bottom": " 0px",
+                          "position": "absolute",
+                        }
+                      }
+                    >
+                      <div
+                        className="card-title h5"
+                      >
+                        New York, NY
+                      </div>
+                      <p
+                        className="card-text"
+                      >
+                        65.535
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CityCard>
+            </div>
+            <div
+              className="card-column col-xl-3 col-lg-6 col-md-12"
+              key="https://jooble.org/images/cities/us/1.jpg"
+            >
+              <CityCard
+                city={
+                  Object {
+                    "cityName": "Washington DC",
+                    "imgLink": "https://jooble.org/images/cities/us/1.jpg",
+                    "numOfVacancies": 56.085,
+                  }
+                }
+              >
+                <div
+                  className="bg-dark text-white city-card card mb-3"
+                >
+                  <img
+                    alt="Card poster"
+                    className="card-img"
+                    src="https://jooble.org/images/cities/us/1.jpg"
+                  />
+                  <div
+                    className="card-img-overlay"
+                  >
+                    <div
+                      className="container-fluid"
+                      style={
+                        Object {
+                          "bottom": " 0px",
+                          "position": "absolute",
+                        }
+                      }
+                    >
+                      <div
+                        className="card-title h5"
+                      >
+                        Washington DC
+                      </div>
+                      <p
+                        className="card-text"
+                      >
+                        56.085
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CityCard>
+            </div>
+            <div
+              className="card-column col-xl-3 col-lg-6 col-md-12"
+              key="https://jooble.org/images/cities/us/11886.jpg"
+            >
+              <CityCard
+                city={
+                  Object {
+                    "cityName": "Chicago, IL",
+                    "imgLink": "https://jooble.org/images/cities/us/11886.jpg",
+                    "numOfVacancies": 48.082,
+                  }
+                }
+              >
+                <div
+                  className="bg-dark text-white city-card card mb-3"
+                >
+                  <img
+                    alt="Card poster"
+                    className="card-img"
+                    src="https://jooble.org/images/cities/us/11886.jpg"
+                  />
+                  <div
+                    className="card-img-overlay"
+                  >
+                    <div
+                      className="container-fluid"
+                      style={
+                        Object {
+                          "bottom": " 0px",
+                          "position": "absolute",
+                        }
+                      }
+                    >
+                      <div
+                        className="card-title h5"
+                      >
+                        Chicago, IL
+                      </div>
+                      <p
+                        className="card-text"
+                      >
+                        48.082
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CityCard>
+            </div>
+            <div
+              className="card-column col-xl-3 col-lg-6 col-md-12"
+              key="https://jooble.org/images/cities/us/10460.jpg"
+            >
+              <CityCard
+                city={
+                  Object {
+                    "cityName": "Atlanta, GA",
+                    "imgLink": "https://jooble.org/images/cities/us/10460.jpg",
+                    "numOfVacancies": 38.497,
+                  }
+                }
+              >
+                <div
+                  className="bg-dark text-white city-card card mb-3"
+                >
+                  <img
+                    alt="Card poster"
+                    className="card-img"
+                    src="https://jooble.org/images/cities/us/10460.jpg"
+                  />
+                  <div
+                    className="card-img-overlay"
+                  >
+                    <div
+                      className="container-fluid"
+                      style={
+                        Object {
+                          "bottom": " 0px",
+                          "position": "absolute",
+                        }
+                      }
+                    >
+                      <div
+                        className="card-title h5"
+                      >
+                        Atlanta, GA
+                      </div>
+                      <p
+                        className="card-text"
+                      >
+                        38.497
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CityCard>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Home>
+  </Router>
+</StaticRouter>
+`;

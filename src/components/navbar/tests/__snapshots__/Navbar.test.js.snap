@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test Renders Register and Login Buttons when user is not logged in 1`] = `
+<StaticRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    staticContext={Object {}}
+  >
+    <Navbar>
+      <nav
+        className="bootstrap-navbar navbar navbar-expand-lg navbar-light"
+      >
+        <span
+          className="navbar-brand"
+        >
+          <Link
+            id="app-logo-link"
+            to="/"
+          >
+            <LinkAnchor
+              href="/"
+              id="app-logo-link"
+              navigate={[Function]}
+            >
+              <a
+                href="/"
+                id="app-logo-link"
+                onClick={[Function]}
+              >
+                <img
+                  alt="logo "
+                  className="align-top logo"
+                  height="60"
+                  src="jooble_logo.png"
+                  width="150"
+                />
+              </a>
+            </LinkAnchor>
+          </Link>
+        </span>
+        <div
+          className="m-auto navbar-collapse navbar-collapse collapse show"
+          id="basic-navbar-nav"
+        >
+          <form
+            className="form-inline"
+          >
+            <div
+              className="form-group"
+            >
+              <input
+                className="form-control"
+                error={null}
+                name="keywords"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Keywords"
+                type="text"
+                value=""
+              />
+              <input
+                className="form-control"
+                error={null}
+                name="location"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Location"
+                type="text"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-primary btn-md"
+              onClick={[Function]}
+              type="button"
+            >
+              Find Jobs
+            </button>
+          </form>
+        </div>
+        <div
+          className="fixed-div"
+        />
+        <div
+          className="align-top navbar-links justify-content-end navbar-nav"
+        >
+          <form
+            className="form-inline"
+            id="login-register-form"
+          >
+            <div
+              className="mr-2 btn-group"
+              role="group"
+            >
+              <Link
+                id="register-link"
+                to="/register"
+              >
+                <LinkAnchor
+                  href="/register"
+                  id="register-link"
+                  navigate={[Function]}
+                >
+                  <a
+                    href="/register"
+                    id="register-link"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="mx-2 btn btn-outline-primary btn-md"
+                      id="register"
+                    >
+                      Register
+                    </button>
+                  </a>
+                </LinkAnchor>
+              </Link>
+              <Link
+                id="login-link"
+                to="/login"
+              >
+                <LinkAnchor
+                  href="/login"
+                  id="login-link"
+                  navigate={[Function]}
+                >
+                  <a
+                    href="/login"
+                    id="login-link"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="mx-2 btn btn-outline-secondary btn-md"
+                      type="button"
+                    >
+                      Login
+                    </button>
+                  </a>
+                </LinkAnchor>
+              </Link>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </Navbar>
+  </Router>
+</StaticRouter>
+`;
+
+exports[`Header test Renders username and logout list  when user is  logged in 1`] = `
+<StaticRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    staticContext={Object {}}
+  >
+    <Navbar>
+      <nav
+        className="bootstrap-navbar navbar navbar-expand-lg navbar-light"
+      >
+        <span
+          className="navbar-brand"
+        >
+          <Link
+            id="app-logo-link"
+            to="/"
+          >
+            <LinkAnchor
+              href="/"
+              id="app-logo-link"
+              navigate={[Function]}
+            >
+              <a
+                href="/"
+                id="app-logo-link"
+                onClick={[Function]}
+              >
+                <img
+                  alt="logo "
+                  className="align-top logo"
+                  height="60"
+                  src="jooble_logo.png"
+                  width="150"
+                />
+              </a>
+            </LinkAnchor>
+          </Link>
+        </span>
+        <div
+          className="m-auto navbar-collapse navbar-collapse collapse show"
+          id="basic-navbar-nav"
+        >
+          <form
+            className="form-inline"
+          >
+            <div
+              className="form-group"
+            >
+              <input
+                className="form-control"
+                error={null}
+                name="keywords"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Keywords"
+                type="text"
+                value=""
+              />
+              <input
+                className="form-control"
+                error={null}
+                name="location"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Location"
+                type="text"
+                value=""
+              />
+            </div>
+            <button
+              className="btn btn-primary btn-md"
+              onClick={[Function]}
+              type="button"
+            >
+              Find Jobs
+            </button>
+          </form>
+        </div>
+        <div
+          className="fixed-div"
+        />
+        <div
+          className="align-top navbar-links justify-content-end navbar-nav"
+        >
+          <div
+            className="list-group list-group-horizontal"
+            id="username-logout-list"
+          >
+            <div
+              className="user-info-list list-group-item list-group-item-primary"
+            >
+              testUser
+            </div>
+            <div
+              className="user-info-list list-group-item list-group-item-info"
+              onClick={[Function]}
+            >
+              Logout
+            </div>
+          </div>
+        </div>
+      </nav>
+    </Navbar>
+  </Router>
+</StaticRouter>
+`;

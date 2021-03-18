@@ -67,7 +67,6 @@ export const login = ({ username, email, password }) => {
   }
 }
 export const setParams = params => {
-  console.log('setting params to: ', params)
   return {
     type: SET_PARAMS,
     payload: { ...params },
@@ -190,7 +189,6 @@ export const setNextPage = ({ params, filters }) => {
         salary: salaries[Math.floor(Math.random() * salaries.length)],
       }))
       const filteredData = filterResults(filters, data, 'nextPage')
-      console.log('Filters >>>>>>>>')
       dispatch({
         type: SET_NEXT_PAGE,
         payload: filteredData.length !== 0,

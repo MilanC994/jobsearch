@@ -68,6 +68,7 @@ function Home() {
             className="form-control"
           />
           <button
+            id="find-jobs-button"
             type="button"
             onClick={setParameters}
             className="btn btn-primary"

@@ -15,7 +15,7 @@ function Navbar({ home }) {
   return (
     <nav className="bootstrap-navbar navbar navbar-expand-lg navbar-light">
       <span className="navbar-brand">
-        <Link to="/">
+        <Link id="app-logo-link" to="/">
           <img
             src={JoobleLogo}
             width="150"
@@ -58,7 +58,10 @@ function Navbar({ home }) {
       <div className="fixed-div" />
       <div className="align-top navbar-links justify-content-end navbar-nav">
         {username ? (
-          <div className="list-group list-group-horizontal">
+          <div
+            id="username-logout-list"
+            className="list-group list-group-horizontal"
+          >
             <div className="user-info-list list-group-item list-group-item-primary">
               {username}
             </div>
@@ -70,9 +73,9 @@ function Navbar({ home }) {
             </div>
           </div>
         ) : (
-          <form className="form-inline">
+          <form id="login-register-form" className="form-inline">
             <div role="group" className="mr-2 btn-group">
-              <Link to="/register">
+              <Link id="register-link" to="/register">
                 <button
                   id="register"
                   className="mx-2 btn btn-outline-primary btn-md"
@@ -80,7 +83,7 @@ function Navbar({ home }) {
                   Register
                 </button>
               </Link>
-              <Link to="/login">
+              <Link id="login-link" to="/login">
                 <button
                   type="button"
                   className="mx-2 btn btn-outline-secondary btn-md"

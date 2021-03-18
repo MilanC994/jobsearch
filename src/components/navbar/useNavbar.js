@@ -6,8 +6,8 @@ import { noValidation } from '../../utils/credentialsValidation'
 import { setParams } from '../../redux/actions'
 
 const useNavbar = () => {
-  const user = useSelector(state => state.user.user)
   const params = useSelector(state => state.jobs.params)
+  const user = useSelector(state => state.user.user)
   // const { input: keywordsField } = useReduxInput(
   //   'keywords',
   //   'jobs.params.keywords',
