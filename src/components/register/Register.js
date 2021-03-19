@@ -136,6 +136,14 @@ function Register() {
               </label>
             </div>
           </div>
+          <div className="form-group mb-3 ">
+            <div className="form-label">
+              <label title="" className="form-check-label">
+                If you already have an account ?{' '}
+                <Link to="/login"> Login </Link>
+              </label>
+            </div>
+          </div>
           {loading ? (
             <ClipLoader loading />
           ) : (

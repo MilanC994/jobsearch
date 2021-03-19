@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 
 function JobCard({ title, description, location, created_at, salary }) {
   return (
-    <div className="job-card card">
+    <div className="job-card card mb-1">
       <div className="card-body">
         <div style={{ display: 'flex' }}>
           <div className="jobs-card-title">

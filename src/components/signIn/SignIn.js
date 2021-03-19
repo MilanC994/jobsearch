@@ -61,6 +61,14 @@ function SignIn() {
               </div>
             )}
           </div>
+          <div className="form-group mb-3 ">
+            <div className="form-label">
+              <label title="" className="form-check-label">
+                If you don't have an account ?{' '}
+                <Link to="/register"> Register </Link>
+              </label>
+            </div>
+          </div>
           {loading ? (
             <ClipLoader loading />
           ) : (

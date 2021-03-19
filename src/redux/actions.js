@@ -99,7 +99,6 @@ export const fetchJobs = ({ params, filters }) => {
         salary: salaries[Math.floor(Math.random() * salaries.length)],
       }))
 
-      console.log(data, 'fetched data with params:', params)
       dispatch({
         type: FETCH_JOBS,
         payload: data,
