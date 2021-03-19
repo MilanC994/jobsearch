@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import JoobleLogo from '../../imgs/jooble_logo.png'
 import { Link, Redirect } from 'react-router-dom'

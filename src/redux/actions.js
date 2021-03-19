@@ -19,7 +19,7 @@ let fetchJobsCancel, jobsNextPageCancel
 //append random salaries to job objects, for salary filter to work
 const salaries = [10, 20, 30, 80, 160, 200, 500, 700]
 
-const filterResults = (filters, data, calledFrom) => {
+const filterResults = (filters, data) => {
   return !data || data.length === 0
     ? []
     : data
@@ -79,7 +79,7 @@ export const setFilters = filters => {
   }
 }
 
-export const fetchJobs = ({ params, filters }) => {
+export const fetchJobs = ({ params }) => {
   //request can cancel itself when multiple requests are sent
   fetchJobsCancel && fetchJobsCancel()
   return async dispatch => {
@@ -98,7 +98,6 @@ export const fetchJobs = ({ params, filters }) => {
         ...obj,
         salary: salaries[Math.floor(Math.random() * salaries.length)],
       }))
-
       dispatch({
         type: FETCH_JOBS,
         payload: data,
@@ -144,7 +143,7 @@ export const setLoggedIn = loggedIn => {
   }
 }
 export const filterData = (filters, data) => {
-  const filtered = filterResults(filters, data, 'filter data')
+  const filtered = filterResults(filters, data)
   return {
     type: FILTER_RESULTS,
     payload: filtered,
@@ -187,7 +186,7 @@ export const setNextPage = ({ params, filters }) => {
         ...obj,
         salary: salaries[Math.floor(Math.random() * salaries.length)],
       }))
-      const filteredData = filterResults(filters, data, 'nextPage')
+      const filteredData = filterResults(filters, data)
       dispatch({
         type: SET_NEXT_PAGE,
         payload: filteredData.length !== 0,

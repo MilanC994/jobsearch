@@ -13,7 +13,7 @@ body {
   overflow: auto;
 }
 .content-container {
-  min-height: 100vh;
+  min-height: 98vh;
 }
 .alert {
   margin-top: 5px;

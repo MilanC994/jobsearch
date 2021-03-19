@@ -116,10 +116,6 @@ function Jobs() {
                   />
                 </div>
               </form>
-              {/* <SalaryModal
-                show={salaryModalOpen}
-                handleClose={toggleSalaryModal}
-              /> */}
               <JobsPagination />
             </div>
             {loading ? (

@@ -43,6 +43,9 @@
 .user-info-list:hover {
   cursor: pointer;
 }
+.navbar-links .list-group .list-group-item {
+  padding: 0.45rem 1.25rem !important;
+}
 .user-info-list:nth-child(2):hover {
   background-color: #007bff;
 }
@@ -78,7 +81,7 @@
     width: 100% !important;
     margin-bottom: 0;
   }
-  .navbar-links{
+  .navbar-links {
     right: 10px;
   }
 }

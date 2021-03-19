@@ -114,10 +114,9 @@ function useJobs() {
     dispatch(
       fetchJobs({
         params,
-        filters: reduxFilters,
       })
     )
-  }, [dispatch, params, reduxFilters])
+  }, [dispatch, params])
   useEffect(() => {
     const fetchJobs = async () => {
       await getJobs()
